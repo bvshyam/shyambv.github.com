@@ -1223,7 +1223,7 @@ padding:0;
 		}
 	.nav-right ul.nav1 li {
 		display: inline-block;
-		text-align: center;
+		text-align: left;
 		margin: 0;
 		width: 100%;
 		padding: 0px 0;
