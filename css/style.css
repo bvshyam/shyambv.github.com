@@ -40,7 +40,7 @@ img{
 /*-- Top-Bar --*/
 
 .agiletopbar {
-	height: 20px;
+	height: 0px;
     border-bottom: 1px solid #146eb4;
     background: #9ac3d6;
     position: relative;
@@ -56,7 +56,7 @@ img{
 	width: 10%;
 	float: left;
 	height: 65px;
-	border-right: 1px solid #146eb4;
+	
 }
 
 .agileinfomenu p {
