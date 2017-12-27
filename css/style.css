@@ -40,9 +40,9 @@ img{
 /*-- Top-Bar --*/
 
 .agiletopbar {
-	height: 65px;
+	height: 20px;
     border-bottom: 1px solid #146eb4;
-    background: #EEE048;
+    background: #9ac3d6;
     position: relative;
 }
 
@@ -88,7 +88,7 @@ img{
 }
 
 .aitslogow3ls a {
-	font-size: 35px;
+	font-size: 15px;
 	color: #FFF;
 }
 
@@ -105,7 +105,7 @@ img{
 }
 
 .wthreecontact a {
-	font-size: 20px;
+	font-size: 15px;
     color: #146eb4;
 }
 
