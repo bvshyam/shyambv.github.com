@@ -121,9 +121,10 @@ img{
 
 /* banner */
 .banner {
-    background: url(../images/banner1.jpg) no-repeat 0px 0px;
+    background: url(../images/banner1.jpg);
     background-size: cover;
 	min-height:770px;
+    
 }
 .w3_banner_info {
     margin: 13em 0 0em;
@@ -1011,7 +1012,7 @@ img.zoom-img:hover {
 }
 @media screen and (max-width: 800px){
 	.agiletopbar,.wthreenavigation,.agileinfomenu,.wthreecontact,.aitslogow3ls {
-		height: 55px;
+		height: 0px;
 	}
 	.agilelogo{
 		height: 54px;
@@ -1090,7 +1091,7 @@ img.zoom-img:hover {
 		width: 29%;
 	}
 	.agiletopbar, .wthreenavigation, .agileinfomenu, .wthreecontact, .aitslogow3ls {
-		height: 50px;
+		height: 0px;
 	}
 	.agilelogo {
 		height: 49px;
@@ -1130,6 +1131,7 @@ img.zoom-img:hover {
 	}
 	.banner {
 		min-height: 430px;
+        width: 100%;
 	}
 	.numscroller {
 		font-size: 3em;
@@ -1144,6 +1146,7 @@ img.zoom-img:hover {
 @media screen and (max-width: 600px){
 	.banner {
 		min-height: 420px;
+        width: 100%;
 	}
 	h3.heading {
 		width: 29%;
@@ -1219,6 +1222,7 @@ img.zoom-img:hover {
 	}
 	.banner {
 		min-height: 350px;
+        width: 100%;
 	}
 	h3.heading {
 		width: 37%;
@@ -1359,7 +1363,7 @@ img.zoom-img:hover {
 		font-size: 1.1em;
 	}
 	.banner {
-		background: url(../images/banner1.jpg) no-repeat -280px 0px;
+		background: url(../images/banner1.jpg) no-repeat 0px 0px;
 		background-size: cover;
 	}
 	h3.heading {
@@ -1404,6 +1408,7 @@ img.zoom-img:hover {
 		background: url(../images/banner1.jpg) no-repeat -300px 0px;
 		background-size: cover;
 	}
+
 	.education .col-md-6, .experience .col-md-6 {
 		padding: 0 15px 0 0;
 	}
