@@ -377,6 +377,16 @@ ul.hireme {
 /*-- //clients--*/
 /* //About */
 
+.abt-img{
+    width: auto;
+    max-width:100%;
+    height: auto;
+}
+
+.personal_align{
+    text-align:left;
+}
+
 /*-- Skills --*/
 .education,.skills,.experience ,.contact,.about,.gallery,.count-agileits{
     padding: 4em 0;
