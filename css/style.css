@@ -218,13 +218,13 @@ a.twitter .front {
 a.facebook .front {
     background: #3b5998;
 }
-a.instagram .front {
-    background: #f77737;
+a.github .front {
+    background: #767676;
 }
 a.pinterest .front {
-    background: #bd081c;
+    background: #007bb6;
 }
-.twitter .back,.facebook .back,.instagram .back,.pinterest .back{
+.twitter .back,.facebook .back,.github .back,.pinterest .back{
     background:#fff;
 }
 .model-3d-0 a:hover {
@@ -253,6 +253,8 @@ a.pinterest .front {
     background: #e4e3e3;
     padding: 7px;
 }
+
+
 /*-- //social icons--*/
 /* //banner */
 
