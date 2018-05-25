@@ -1,18 +1,18 @@
 ---
 layout: page
 title: Portfolio
-subtitle: Checkout my Data Science Portfolio
+subtitle: Checkout my Portfolio
 ---
 
-# My Portfolio
+## Data Science Portfolio
 
-Below listed is the index to my other github repositories. This repos are only my open source repos. Projects which I have performed in organizations are not listed here.
+Below listed is an index to my open Data Science Github repositories. These are only my open source projects. Projects which I have performed in my work environment are not listed here.
 
 Some recent projects are:
 
-## Python
+### Python
 
-* [NYC Data Science Challenge]:  - Data science challenge on New York Taxi dataset
+* [NYC Data Science Challenge] - Data science challenge on New York Taxi dataset
 * [Resume Chatbot] - This is sort of a QA system using Deep learning and NLP.
 * [Movie Review Classification] - Sentiment classification of movie reviews using Deep learning and NLP.
 * [MNIST Classification] - Digits image classification using deep learning with Keras and Tensorflow. 
@@ -27,7 +27,7 @@ Some recent projects are:
 * [Other Web Analytics python projects] - Network analysis and NLP
 * [Other ML projects] - Docker and other ML Projects.
 
-## R Programming
+### R Programming
 * [RPUBS link] - RMarkdown documents of the various code and math concepts.
 * [Book Recommendation] - Using Collaborative, content, item based filters.
 * [Amazon Reviews] - Recommendation system using spark and R.
@@ -39,12 +39,12 @@ Some recent projects are:
 * [Other R basic projects] - Other basic projects from scratch
 * [Other recommendation projects] - Other recommendation engine projects
 
-## Visual Analytics
+### Visual Analytics
 * [Car facts] - D3 Visualizations using javascript.
 * [Presidents visual] - D3 Visualization using javascript.
 * [Other visualization projects] - Other visuals using python, R and Javascript.
 
-## Math - Stat/Probability
+### Math - Stat/Probability
 * [Manual Evaluation Functions] - Creating Classification evaluation functions manually. 
 * [Linear Regression] - Extensive Analysis on Linear Regression
 * [Loan Analysis] - Using various statistics techniques analyzing lending club dataset.
@@ -58,10 +58,7 @@ Some recent projects are:
 
 **Some of them might not be updated. Please check to parent github login for other repo**
 
-License
-----
 
-MIT
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
@@ -109,3 +106,14 @@ MIT
 [Calculus and Probability]: <https://github.com/bvshyam/cuny_data_science_repo/tree/master/605%20-%20Computational%20Mathematics/Week%2013%20-%20Calculus>
 [Vectors, Matrix, etc]: <https://github.com/bvshyam/cuny_data_science_repo/tree/master/605%20-%20Computational%20Mathematics>
 [Statistics and Probability, etc]: <https://github.com/bvshyam/cuny_data_science_repo/tree/master/606%20-%20Statistics>
+
+
+### Web Development
+
+* [Stainwash] - Created a complete website with Angular backend for my cofounded company stainwash.in
+* [Zenbeauty] - Created a beauty marketplace website using wordpress and PHP.
+
+
+[//]: # (Web Development)
+[Stainwash]: <https://stainwash.in>
+[Zenbeauty]: <https://zenbeauty.in>
