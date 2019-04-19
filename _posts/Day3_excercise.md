@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Gym Routine
-subtitle: "My excercise routine"
+comments:false
 css: "/css/aboutme.css"
 ---
 
