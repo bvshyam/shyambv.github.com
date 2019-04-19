@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Gym Routine
 subtitle: "My excercise routine"
 css: "/css/aboutme.css"
