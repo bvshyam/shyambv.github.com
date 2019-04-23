@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gym Routine
-subtitle: Day3
+title: Test markdown
+subtitle: Each post also has a subtitle
 comments:false
 ---
 
