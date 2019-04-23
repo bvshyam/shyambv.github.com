@@ -2,7 +2,6 @@
 layout: post
 title: Gym Routine
 comments:false
-css: "/css/aboutme.css"
 ---
 
 <h1 style="color: #5e9ca0;"><span style="color: #2b2301;">Day3:</span></h1>
