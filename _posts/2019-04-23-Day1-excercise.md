@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Get Fit Series
-subtitle: Day 1 Exercise
+title: Day 1 Exercise 
+subtitle: Get Fit Series
 comments: false
 ---
 
