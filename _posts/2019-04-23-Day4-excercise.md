@@ -2,12 +2,10 @@
 layout: post
 title: Day 4 Exercise
 subtitle: Get Fit Series
-comments: false
+comments: true
 ---
 
 
-<p>&nbsp;</p>
-<h1>Day4:</h1>
 <p>&nbsp;</p>
 <table style="height: 210px; width: 713px;">
 <tbody>

@@ -2,7 +2,7 @@
 layout: post
 title: Daily quick exercise
 subtitle: Get Fit Series
-comments: false
+comments: true
 ---
 
 
@@ -15,7 +15,7 @@ comments: false
 <table style="height: 245px; width: 412px;">
 <tbody>
 <tr>
-<td style="width: 12px; text-align: center;"><strong>Excercise</strong></td>
+<td style="width: 12px; text-align: center;"><strong>Exercise</strong></td>
 <td style="width: 33px; text-align: center;"><strong>Count</strong></td>
 </tr>
 <tr>

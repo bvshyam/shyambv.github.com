@@ -2,16 +2,14 @@
 layout: post
 title: Day 2 Exercise 
 subtitle: Get Fit Series
-comments: false
+comments: true
 ---
 
-<p>&nbsp;</p>
-<h2>Day2:</h2>
 <p>&nbsp;</p>
 <table style="height: 280px; width: 746px;">
 <tbody>
 <tr style="height: 18px;">
-<td style="width: 60px; text-align: center; height: 18px;"><strong>Excericse</strong></td>
+<td style="width: 60px; text-align: center; height: 18px;"><strong>Exericse</strong></td>
 <td style="width: 46px; text-align: center; height: 18px;"><strong>Count</strong></td>
 <td style="width: 622px; text-align: center; height: 18px;"><strong>Image/Video</strong></td>
 </tr>

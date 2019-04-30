@@ -2,14 +2,13 @@
 layout: post
 title: Day 3 Exercise
 subtitle: Get Fit Series
-comments: false
+comments: true
 ---
-
-<h1 style="color: #5e9ca0;"><span style="color: #2b2301;">Day3:</span></h1>
+<p>&nbsp;</p>
 <table style="width: 675px;">
 <tbody>
 <tr style="height: 18px;">
-<td style="width: 70px; text-align: center; height: 18px;"><strong>Excercise</strong></td>
+<td style="width: 70px; text-align: center; height: 18px;"><strong>Exercise</strong></td>
 <td style="width: 53px; text-align: center; height: 18px;"><strong>Count</strong></td>
 <td style="width: 608px; text-align: center; height: 18px;"><strong>Image/Video</strong></td>
 </tr>
