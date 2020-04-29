@@ -1,74 +1,81 @@
 ---
 layout: post
-title: Day 9 Exercise
-subtitle: Get Fit Series
+title: GAN
+subtitle: AI series
 comments: true
 ---
 
-<p>&nbsp;</p>
-<table style="height: 210px; width: 713px;">
-<tbody>
-<tr style="height: 18px;">
-<td style="width: 63px; text-align: center; height: 18px;"><strong>Exercise</strong></td>
-<td style="width: 57px; text-align: center; height: 18px;"><strong>Count</strong></td>
-<td style="width: 575px; text-align: center; height: 18px;"><strong>Image/Video</strong></td>
-</tr>
-<tr style="height: 43px;">
-<td style="width: 63px; height: 43px;">Leg raises&nbsp;</td>
-<td style="width: 57px; height: 43px;">20</td>
-<td style="width: 575px; height: 43px;">&nbsp;</td>
-</tr>
-<tr style="height: 320px;">
-<td style="width: 63px; height: 320px;">3 way jump</td>
-<td style="width: 57px; height: 320px;">15</td>
-<td style="width: 575px; height: 320px;"><iframe src="//www.youtube.com/embed/NCzSB0o6I30" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 63px; height: 18px;">Frog hop w/band&nbsp;</td>
-<td style="width: 57px; height: 18px;">20</td>
-<td style="width: 575px; height: 18px;"><iframe src="//www.youtube.com/embed/GvTeWVyJKNE" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 63px; height: 18px;">Plank</td>
-<td style="width: 57px; height: 18px;">1 min</td>
-<td style="width: 575px; height: 18px;">&nbsp;</td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 63px; height: 18px;">Straight lift front raise</td>
-<td style="width: 57px; height: 18px;">10</td>
-<td style="width: 575px; height: 18px;"><iframe src="//www.youtube.com/embed/Ofo2DQdT7DA" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 63px; height: 18px;">Shrugs</td>
-<td style="width: 57px; height: 18px;">20</td>
-<td style="width: 575px; height: 18px;"><iframe src="//www.youtube.com/embed/xDt6qbKgLkY" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
-</tr>
-<tr style="height: 17px;">
-<td style="width: 63px; height: 17px;">Cable row (stretch band)</td>
-<td style="width: 57px; height: 17px;">10</td>
-<td style="width: 575px; height: 17px;"><iframe src="//www.youtube.com/embed/Xz29bq7gVbg" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 63px; height: 18px;">Single Leg-Raise Crunch</td>
-<td style="width: 57px; height: 18px;">1 min</td>
-<td style="width: 575px; height: 18px;"><iframe src="//www.youtube.com/embed/ervCsM3ry7A" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 63px; height: 18px;">Overhead Tricep Extension on the Cable</td>
-<td style="width: 57px; height: 18px;">13</td>
-<td style="width: 575px; height: 18px;"><iframe src="//www.youtube.com/embed/hS82Wlo67O0" width="560" height="314" allowfullscreen="allowfullscreen"></iframe></td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 63px; height: 18px;">Push-ups</td>
-<td style="width: 57px; height: 18px;">10</td>
-<td style="width: 575px; height: 18px;">&nbsp;</td>
-</tr>
-<tr style="height: 18px;">
-<td style="width: 63px; height: 18px;">&nbsp;</td>
-<td style="width: 57px; height: 18px;">&nbsp;</td>
-<td style="width: 575px; height: 18px;">&nbsp;</td>
-</tr>
-</tbody>
-</table>
-<p>&nbsp;</p>
-<p><strong>&nbsp;</strong></p>
+
+
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Train a GAN and generate faces using AWS Sagemaker | PyTorch</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Train a GAN and generate faces using AWS Sagemaker | PyTorch</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+I assume you have already heard or worked on GAN. If you have not heard before, then Generative Adversarial Networks(GAN) is one type of…
+</section>
+<section data-field="body" class="e-content">
+<section name="9834" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="e6a6" id="e6a6" class="graf graf--h3 graf--leading graf--title">Train a GAN and generate faces using AWS Sagemaker | PyTorch</h3><figure name="f755" id="f755" class="graf graf--figure graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 394px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 56.3%;"></div><img class="graf-image" data-image-id="0*EzJyntnAylfF1649" data-width="3052" data-height="1717" data-unsplash-photo-id="bq31L0jQAjU" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/0*EzJyntnAylfF1649"></div><figcaption class="imageCaption">Photo by <a href="https://unsplash.com/@bamagal?utm_source=medium&amp;utm_medium=referral" data-href="https://unsplash.com/@bamagal?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor" rel="photo-creator noopener noopener" target="_blank">“My Life Through A Lens”</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" data-href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" class="markup--anchor markup--figure-anchor" rel="photo-source noopener noopener" target="_blank">Unsplash</a></figcaption></figure><p name="e50a" id="e50a" class="graf graf--p graf-after--figure">I assume you have already heard or worked on GAN. If you have not heard before, then Generative Adversarial Networks(GAN) is one type of neural network architecture that allows us to create synthetic data, images or videos. It has become an interesting subfield in deep learning. Some of the different types of GAN’s are DCGAN, CycleGAN(CGAN), GauGAN, StyleGAN, Pix2Pix, etc. As it is so popular, new types of GAN papers and architecture emerge as we speak!</p><p name="f85a" id="f85a" class="graf graf--p graf-after--p">Although there are many different GAN architectures, they all have one thing in common. To train a GAN they need a lot of computing power and they are GPU hungry. So it is really difficult to train a GAN in the local environment unless you have a good distributed GPU set up with time and money. Else you can leverage the cloud to train GAN. Cloud environments can be used for various neural network training and it is not restricted to GAN’s. I faced issues while running in my local environment so I used cloud and able to train easily and deploy it in production quickly!</p><p name="f384" id="f384" class="graf graf--p graf-after--p">There are different cloud providers, I felt AWS is ahead of other cloud providers in many areas. Particularly in machine learning space, AWS has different services that can be leveraged. So in this blog, we are going to look at Sagemaker service which is provided by AWS.</p><figure name="38b5" id="38b5" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 350px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 50%;"></div><img class="graf-image" data-image-id="1*bNhSlqIxcpDj4rGJInqBKQ.jpeg" data-width="800" data-height="400" src="https://cdn-images-1.medium.com/max/800/1*bNhSlqIxcpDj4rGJInqBKQ.jpeg"></div></figure><p name="b3b4" id="b3b4" class="graf graf--p graf-after--figure">Amazon SageMaker is a fully managed service that provides us the ability to build, train, and deploy machine learning (ML) models quickly. Another huge advantage of SageMaker is the machine learning models can be deployed to production faster with much less effort. Yes, some cloud providers are cheaper than AWS however, sagemaker provides other advantages on deployment. You can also leverage the local GPU environment if you have one while developing models.</p><p name="5278" id="5278" class="graf graf--p graf-after--p">In this blog, we will generate new faces (Again!) by training celebrities dataset. For generating new images, I will use my local GPU environment(to save some bucks) for development and sanity testing and use Sagemaker for training a full-fledged model. I will also show how to create an endpoint for deployment.</p><p name="6c74" id="6c74" class="graf graf--p graf-after--p">As there are plenty of articles on AWS account set up and local environment setup, I am going to skip that part. If you have any questions, please feel free to ask in the comments section. Sagemaker can be accessed via AWS services console page.</p><figure name="14a9" id="14a9" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 462px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 65.9%;"></div><img class="graf-image" data-image-id="1*pKj6HVTne9Kgj-l1KAhWrQ.png" data-width="998" data-height="658" src="https://cdn-images-1.medium.com/max/800/1*pKj6HVTne9Kgj-l1KAhWrQ.png"></div></figure><p name="0658" id="0658" class="graf graf--p graf-after--figure">Now there are two options for Jupyter Notebooks.</p><ol class="postList"><li name="837b" id="837b" class="graf graf--li graf-after--p">Use Local Environment</li><li name="1941" id="1941" class="graf graf--li graf-after--li">Sagemaker Environment</li></ol><p name="5599" id="5599" class="graf graf--p graf-after--li"><strong class="markup--strong markup--p-strong">Local Environment:<br></strong>If you have a local environment with Jupyter notebook, then congrats! You can save some bucks by using a local environment for development and sanity testing. You install Sagemaker python package and use sagemaker functions locally. If you have GPU with Cuda enabled, then you can use it to test the entire code and submit your job sagemaker. Below are the steps for setting up a local environment. Entire code is present in my <a href="https://github.com/bvshyam/facegeneration_gan_sagemaker" data-href="https://github.com/bvshyam/facegeneration_gan_sagemaker" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Github page</a></p><p name="4512" id="4512" class="graf graf--p graf-after--p">Step 1: Install package <br>Install Sagemaker python package in your virtual environment <a href="https://pypi.org/project/sagemaker/" data-href="https://pypi.org/project/sagemaker/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://pypi.org/project/sagemaker/</a></p><p name="c249" id="c249" class="graf graf--p graf-after--p">Step 2: Connect to your AWS account<br>Assuming you have created an AWS account and have Sagemaker and S3 bucket access. You can also set access key, secret variables, and region in your .aws/config file.</p><p name="3760" id="3760" class="graf graf--p graf-after--p">You also need an IAM role for sagemaker execution. It needs full access to Sagemaker.</p><pre name="68dd" id="68dd" class="graf graf--pre graf-after--p">import sagemaker<br>import boto3</pre><pre name="e52e" id="e52e" class="graf graf--pre graf-after--pre">sagemaker_session = sagemaker.Session(boto3.session.Session(<br>    aws_access_key_id=&#39;xxxxxxxxxxxxx&#39;,<br>    aws_secret_access_key=&#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&#39;,<br>    region_name=&#39;update your AWS region&#39;))</pre><pre name="e0e0" id="e0e0" class="graf graf--pre graf-after--pre">bucket = sagemaker_session.default_bucket()</pre><pre name="6983" id="6983" class="graf graf--pre graf-after--pre">prefix = &#39;sagemaker/dcgan&#39;</pre><pre name="9cdd" id="9cdd" class="graf graf--pre graf-after--pre">role = &#39;sagemaker_execution_role&#39;</pre><p name="973e" id="973e" class="graf graf--p graf-after--pre">You can test the connection by uploading test data in S3 bucket and check by using the following command</p><pre name="3ae2" id="3ae2" class="graf graf--pre graf-after--p">input_data = sagemaker_session.upload_data(path=data_dir, bucket=bucket, key_prefix=prefix)<br>input_data</pre><p name="c01b" id="c01b" class="graf graf--p graf-after--pre">If you did not get any error and data is in the S3 bucket, then you are good to start. If you get any error, then please debug and correct the issue. Alternatively, you can provide the S3 bucket link here and download the data from S3 for local testing.</p><p name="10ea" id="10ea" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Sagemaker Environment:<br></strong>If you do not have a local environment, you can start sagemaker Jupyter notebooks. This will spin up a compute instance and it will deploy required containers for Jupyter notebooks.</p><p name="3272" id="3272" class="graf graf--p graf-after--p">Step 1: Launch Notebook<br>Goto Notebook instances section sagemaker and create a notebook instance</p><figure name="e39b" id="e39b" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 548px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 78.3%;"></div><img class="graf-image" data-image-id="1*smMTTKVSI9khuzBbkN2TgA.png" data-width="793" data-height="621" src="https://cdn-images-1.medium.com/max/800/1*smMTTKVSI9khuzBbkN2TgA.png"></div></figure><p name="cf67" id="cf67" class="graf graf--p graf-after--figure">When you go next, you can set up the S3 bucket and IAM roles. Selecting the size of the cloud instance and other technical details depending on your needs and size.</p><figure name="8af2" id="8af2" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 486px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 69.5%;"></div><img class="graf-image" data-image-id="0*ye_jis-JAqOkfBOk.png" data-width="825" data-height="573" src="https://cdn-images-1.medium.com/max/800/0*ye_jis-JAqOkfBOk.png"></div></figure><p name="1d57" id="1d57" class="graf graf--p graf-after--figure">Now, we can go ahead and “Create”. AWS takes some time to get the Notebook ready. We can see on the console that the Notebook Instance is “Pending”.</p><figure name="56dc" id="56dc" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 464px; max-height: 185px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 39.900000000000006%;"></div><img class="graf-image" data-image-id="1*zbSuiQHLQpEdIeTjT8qKhQ.png" data-width="464" data-height="185" src="https://cdn-images-1.medium.com/max/800/1*zbSuiQHLQpEdIeTjT8qKhQ.png"></div></figure><p name="7eb3" id="7eb3" class="graf graf--p graf-after--figure">Once it is ready, click on the “Open Jupyter” notebook. You are ready to start training your GAN now.</p><p name="8e07" id="8e07" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">GAN Model Training:</strong></p><p name="d238" id="d238" class="graf graf--p graf-after--p">I am using PyTorch for Training a GAN model. Before training, it requires some pre-processing. If you are using a local environment, you need to upload the data in the S3 bucket. Below are some processing that you need to perform.</p><ol class="postList"><li name="7e80" id="7e80" class="graf graf--li graf-after--p">Transform the input images and have them in a common size.</li></ol><pre name="3fa1" id="3fa1" class="graf graf--pre graf-after--li">def get_dataloader(batch_size, image_size, data_dir):<br>    &quot;&quot;&quot;<br>    Batch the neural network data using DataLoader<br>    :param batch_size: The size of each batch; the number of images in a batch<br>    :param img_size: The square size of the image data (x, y)<br>    :param data_dir: Directory where image data is located<br>    :return: DataLoader with batched data<br>    &quot;&quot;&quot;<br>       <br>    transform = transforms.Compose([transforms.Resize(image_size),<br>                                  transforms.ToTensor()])<br>    <br>    dataset = datasets.ImageFolder(data_dir,transform=transform)<br>    <br>    #rand_sampler = torch.utils.data.RandomSampler(dataset, num_samples=32, replacement=True)<br>    #dataloader = torch.utils.data.dataloader.DataLoader(dataset, batch_size=batch_size,shuffle=False, sampler=rand_sampler)<br>    <br>    #dataloader = torch.utils.data.dataloader.DataLoader(dataset, batch_size=batch_size,shuffle=True)<br>    <br>        <br>    return dataloader</pre><p name="08c3" id="08c3" class="graf graf--p graf-after--pre">While testing you can use random sampler on the input dataset and use it in the data loader.</p><p name="d082" id="d082" class="graf graf--p graf-after--p">2. Scale the images</p><p name="2eb2" id="2eb2" class="graf graf--p graf-after--p">Scaling the images is an important step in the neural network. It is particularly true while performing GAN.</p><pre name="8e28" id="8e28" class="graf graf--pre graf-after--p">def scale(x, feature_range=(-1, 1)):<br>    &#39;&#39;&#39; Scale takes in an image x and returns that image, scaled<br>       with a feature_range of pixel values from -1 to 1. <br>       This function assumes that the input x is already scaled from 0-1.&#39;&#39;&#39;<br>    # assume x is scaled to (0, 1)<br>    # scale to feature_range and return scaled x<br>    <br>    min, max = feature_range<br>    x = x * (max - min) + min<br>    <br>    return x</pre><p name="21e1" id="21e1" class="graf graf--p graf-after--pre">3. Create the model</p><p name="dac8" id="dac8" class="graf graf--p graf-after--p">When performing GAN, two types of network needs to be trained. One is a generator and another is the discriminator. Input to a generator is from latent space or noise. A generator is trained to generate an image and a Discriminator is trained to detect if the image is real or fake. The final output of playing this game between generator and discriminator is a realistic output from Generator which looks like real images.</p><figure name="dd5f" id="dd5f" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 665px; max-height: 380px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 57.099999999999994%;"></div><img class="graf-image" data-image-id="0*dnIngDqVkAp1UEFv.png" data-width="665" data-height="380" src="https://cdn-images-1.medium.com/max/800/0*dnIngDqVkAp1UEFv.png"></div></figure><p name="14df" id="14df" class="graf graf--p graf-after--figure">As mentioned before, there are other architectures of GAN. However, this is the idea behind the GAN. Model code is provided in model.py in the Github repo. I have written a DCGAN model using convolution t</p><p name="7e7a" id="7e7a" class="graf graf--p graf-after--p">4. Training the model</p><p name="ec56" id="ec56" class="graf graf--p graf-after--p">This is the step where we are going to leverage the cloud. Before running many epochs in sagemaker, test the complete workflow in a local environment with sample data.</p><p name="2e46" id="2e46" class="graf graf--p graf-after--p">Some hyperparameters need to tuned like learning rate, beta1, and beta2. I have selected it from this paper <a href="https://arxiv.org/pdf/1511.06434.pdf" data-href="https://arxiv.org/pdf/1511.06434.pdf" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">https://arxiv.org/pdf/1511.06434.pdf</a></p><p name="1425" id="1425" class="graf graf--p graf-after--p">Once sanity testing is performed, it is time to submit this job to sagemaker. Create an estimator object using sagemaker PyTorch API and call the fit method.</p><pre name="3121" id="3121" class="graf graf--pre graf-after--p">from sagemaker.pytorch import PyTorch</pre><pre name="bf46" id="bf46" class="graf graf--pre graf-after--pre">estimator = PyTorch(entry_point=&quot;train.py&quot;,<br>                    source_dir=&quot;train&quot;,<br>                    role=role,<br>                    framework_version=&#39;0.4.0&#39;,<br>                    train_instance_count=4,<br>                    train_instance_type=&#39;ml.p2.xlarge&#39;,<br>                    hyperparameters={<br>                        &#39;epochs&#39;: 15,<br>                        &#39;conv_dim&#39;: 64,<br>                    })</pre><pre name="4c77" id="4c77" class="graf graf--pre graf-after--pre">estimator.fit({&#39;training&#39;: input_data})</pre><p name="4fa3" id="4fa3" class="graf graf--p graf-after--pre">Some points to note on the above code:</p><ol class="postList"><li name="8a54" id="8a54" class="graf graf--li graf-after--p">You can change the ML framework. Sagemaker supports all major frameworks like PyTorch, Tensorflow, etc.</li><li name="8a68" id="8a68" class="graf graf--li graf-after--li">The source directory needs to be specified where all the code is present as shown in my GitHub repository.</li><li name="d3d8" id="d3d8" class="graf graf--li graf-after--li">Pytorch framework version needs to be specified. Train directory should also contain requirement.txt file with all the packages which were used in data processing and training.</li><li name="8bdf" id="8bdf" class="graf graf--li graf-after--li">Instance type depends on how big compute instance you need. If you are training a GAN, I would at-least prefer p2.xlarge as it contains GPU. It is recommended to have a GPU enabled compute server. Else the model will train forever.</li></ol><p name="9052" id="9052" class="graf graf--p graf-after--li">Once you call the fit method, it should create some logs like the below one. It is starting a compute instance and training the model.</p><figure name="4ff2" id="4ff2" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 125px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 17.9%;"></div><img class="graf-image" data-image-id="1*ENp5lPVpACVbp7Bwsekjow.png" data-width="801" data-height="143" src="https://cdn-images-1.medium.com/max/800/1*ENp5lPVpACVbp7Bwsekjow.png"></div></figure><figure name="27a6" id="27a6" class="graf graf--figure graf-after--figure"><div class="aspectRatioPlaceholder is-locked" style="max-width: 469px; max-height: 246px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 52.5%;"></div><img class="graf-image" data-image-id="1*AP1DSyy4FkKzMJD2YBOZWQ.png" data-width="469" data-height="246" src="https://cdn-images-1.medium.com/max/800/1*AP1DSyy4FkKzMJD2YBOZWQ.png"></div></figure><p name="1d46" id="1d46" class="graf graf--p graf-after--figure">Different colors highlight it is using different compute instances. We are also printing discriminator and generator losses. Now you can leave it to train until it completes.</p><p name="8747" id="8747" class="graf graf--p graf-after--p">If your training time is large, your kernel session will likely end. Worry not, as we are training in the cloud we can easily attach to the session which we were running by below code. Job name can be found in sagemaker console.</p><pre name="e4b3" id="e4b3" class="graf graf--pre graf-after--p">estimator = estimator.attach(&#39;sagemaker-job-name-2020-xxxxx&#39;)</pre><p name="6707" id="6707" class="graf graf--p graf-after--pre">Once the model is trained, you are good to deploy it.</p><p name="8969" id="8969" class="graf graf--p graf-after--p">5. Deploy the model:</p><p name="62f6" id="62f6" class="graf graf--p graf-after--p">Deploy the model to another compute instance which has less compute power. However, if you need GPU for prediction then please use p2.xlarge or above. The model can also be served in a distributed fashion by instance count parameter.</p><pre name="ab9e" id="ab9e" class="graf graf--pre graf-after--p">predictor = estimator.deploy(initial_instance_count = 1, instance_type = ‘ml.m5.large’)</pre><figure name="59f2" id="59f2" class="graf graf--figure graf-after--pre"><div class="aspectRatioPlaceholder is-locked" style="max-width: 531px; max-height: 78px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 14.7%;"></div><img class="graf-image" data-image-id="1*Su9r3JOs_8FgmVcCE3VWWA.png" data-width="531" data-height="78" src="https://cdn-images-1.medium.com/max/800/1*Su9r3JOs_8FgmVcCE3VWWA.png"></div><figcaption class="imageCaption">After deployment you can get endpoint name</figcaption></figure><p name="4f44" id="4f44" class="graf graf--p graf-after--figure">6. Results -Generate faces</p><p name="21ba" id="21ba" class="graf graf--p graf-after--p">After deploying the model, it is time to generate faces from our trained model.</p><pre name="9ca1" id="9ca1" class="graf graf--pre graf-after--p">#Generate random noise<br>fixed_z = np.random.uniform(-1, 1, size=(16, 100))<br>fixed_z = torch.from_numpy(fixed_z).float()</pre><pre name="80ac" id="80ac" class="graf graf--pre graf-after--pre">sample_y = predictor.predict(fixed_z)</pre><figure name="68a4" id="68a4" class="graf graf--figure graf-after--pre"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 173px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 24.8%;"></div><img class="graf-image" data-image-id="1*4ufKQ7G4GYrcstwQ2Ag4eA.png" data-width="820" data-height="203" src="https://cdn-images-1.medium.com/max/800/1*4ufKQ7G4GYrcstwQ2Ag4eA.png"></div></figure><p name="922e" id="922e" class="graf graf--p graf-after--figure">I have added all the files in my Github repo.</p><h3 name="a13a" id="a13a" class="graf graf--h3 graf-after--p"><strong class="markup--strong markup--h3-strong">Production:</strong></h3><p name="a7a7" id="a7a7" class="graf graf--p graf-after--h3">Once we have the model and endpoint deployed, we can create an AWS Lambda function that could be invoked via the API Gateway. API can be used to generate images from any application.</p><blockquote name="91d1" id="91d1" class="graf graf--blockquote graf-after--p">All the code and packages are found at my <a href="https://github.com/bvshyam/facegeneration_gan_sagemaker" data-href="https://github.com/bvshyam/facegeneration_gan_sagemaker" class="markup--anchor markup--blockquote-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--blockquote-strong">Github</strong></a> I hope you can make use of the repo along with this story.</blockquote><p name="20a4" id="20a4" class="graf graf--p graf-after--blockquote graf--trailing">Questions? Comments? Feel free to leave your feedback in the comments section.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@bv.shyam" class="p-author h-card">Shyam BV</a> on <a href="https://medium.com/p/4d4c07ed0c38"><time class="dt-published" datetime="2020-04-05T21:55:34.546Z">April 5, 2020</time></a>.</p><p><a href="https://medium.com/@bv.shyam/train-a-gan-and-generate-faces-using-aws-sagemaker-pytorch-4d4c07ed0c38" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on April 9, 2020.</p></footer></article></body></html>
